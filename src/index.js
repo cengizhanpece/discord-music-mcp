@@ -74,7 +74,11 @@ async function resolveChannel(channel, guild) {
   return { matches };
 }
 
-const describeChannel = (c) => `${c.guildName} › 🔊 ${c.channelName} (guild: ${c.guildId}, kanal: ${c.channelId})`;
+// canJoin === false → botun bu kanalda View Channel / Connect / Speak izni yok (ör. gizli kanal).
+// Bunu modele söylemek önemli: yoksa çalmayı dener, hata alır ve nedenini bilemez.
+const describeChannel = (c) =>
+  `${c.guildName} › ${c.canJoin === false ? '🔒' : '🔊'} ${c.channelName} (guild: ${c.guildId}, channel: ${c.channelId})` +
+  (c.canJoin === false ? ` — bot has no access (missing: ${c.missing.join(', ')})` : '');
 
 // ----------------------------------------------------------------------------
 // 2) TOOLS

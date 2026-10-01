@@ -143,6 +143,7 @@ Also: resource `discord://voice-channels` and prompt `dj` ("pick something that 
 |---|---|
 | *Could not reach the Discord YouTube DJ bot* | Start the bot (Start menu → **Discord YouTube DJ**). Check that <http://localhost:1231> opens. |
 | *The bot is not connected to Discord yet* | Finish the bot's setup in its dashboard (token + invite). |
+| 🔒 channel / *"The bot can't play in …"* | The bot has no access to that private channel. See [Private voice channels](https://github.com/cengizhanpece/discord-youtube-dj#private-hidden-voice-channels). |
 | *No voice channel selected* | Name a channel in your request, or pick one in the bot's dashboard. |
 | Server doesn't show up in Claude | Check the path to `src/index.js`. Run `node "<path>"` yourself: it should print `[music-mcp] …ready` and wait. Press Ctrl+C to exit. |
 | Wrong port / 404 errors | Set `MUSIC_BOT_URL` in the MCP config (see above). Environment variables from your shell are not passed through. |
