@@ -269,4 +269,4 @@ server.registerPrompt(
 // (Alternatif: Streamable HTTP transport — uzak sunucular için.)
 const transport = new StdioServerTransport();
 await server.connect(transport);
-log('hazır, bot adresi:', BOT_URL);
+log('ready, bot address:', BOT_URL);

@@ -103,7 +103,7 @@ MCP server, [Discord YouTube DJ](https://github.com/cengizhanpece/discord-youtub
 
 ## 6. Kurulum & çalıştırma
 
-Kullanıcı olarak hiçbir şey kurman gerekmiyor; `npx` paketi npm'den çekip çalıştırıyor. Geliştirme için:
+Paket npm'de yayınlı değil; repoyu klonlayıp kuruyorsun (adım adım kurulum ve gereken bilgiler için [README](../README.md#setup)):
 
 ```bash
 git clone https://github.com/cengizhanpece/discord-music-mcp
@@ -131,9 +131,8 @@ Tarayıcıda açılan arayüzde tool'ları elle çağırıp ham JSON-RPC mesajla
 
 ### c) Claude Code'a ekle
 ```bash
-claude mcp add discord-music -- npx -y discord-music-mcp
+claude mcp add discord-music -- node "C:\tam\yol\discord-music-mcp\src\index.js"
 ```
-Yerel kopyayı denemek için: `claude mcp add discord-music-dev -- node /tam/yol/src/index.js`
 Sonra Claude Code'da `/mcp` ile bağlantıyı kontrol et ve "Müzik Odası'nda lo-fi bir şey çal" de.
 
 ### d) Claude Desktop'a ekle
@@ -142,8 +141,8 @@ Sonra Claude Code'da `/mcp` ile bağlantıyı kontrol et ve "Müzik Odası'nda l
 {
   "mcpServers": {
     "discord-music": {
-      "command": "npx",
-      "args": ["-y", "discord-music-mcp"],
+      "command": "node",
+      "args": ["C:\\tam\\yol\\discord-music-mcp\\src\\index.js"],
       "env": { "MUSIC_BOT_URL": "http://localhost:1231" }
     }
   }

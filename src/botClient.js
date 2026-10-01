@@ -16,12 +16,12 @@ async function request(path, body) {
     });
   } catch {
     throw new Error(
-      `Discord YouTube DJ botuna ulaşılamadı (${BOT_URL}). Bot çalışıyor mu? ` +
-      `Kurulu değilse: https://github.com/cengizhanpece/discord-youtube-dj`
+      `Could not reach the Discord YouTube DJ bot at ${BOT_URL}. Is it running? ` +
+      `Install it from https://github.com/cengizhanpece/discord-youtube-dj`
     );
   }
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.error || `Bot ${res.status} döndürdü`);
+  if (!res.ok) throw new Error(data.error || `Bot returned HTTP ${res.status}`);
   return data;
 }
 

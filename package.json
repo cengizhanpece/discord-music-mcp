@@ -1,6 +1,7 @@
 {
   "name": "discord-music-mcp",
   "version": "1.0.0",
+  "private": true,
   "description": "MCP server that lets Claude and other AI assistants play music in Discord via Discord YouTube DJ",
   "keywords": [
     "mcp",
@@ -16,11 +17,6 @@
   "bin": {
     "discord-music-mcp": "src/index.js"
   },
-  "files": [
-    "src",
-    "README.md",
-    "LICENSE"
-  ],
   "engines": {
     "node": ">=20"
   },
