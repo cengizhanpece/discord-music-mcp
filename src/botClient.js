@@ -17,7 +17,7 @@ async function request(path, body) {
   } catch {
     throw new Error(
       `Discord YouTube DJ botuna ulaşılamadı (${BOT_URL}). Bot çalışıyor mu? ` +
-      `Kurulu değilse: https://github.com/YOUR_GITHUB_USERNAME/discord-youtube-dj`
+      `Kurulu değilse: https://github.com/cengizhanpece/discord-youtube-dj`
     );
   }
   const data = await res.json().catch(() => ({}));

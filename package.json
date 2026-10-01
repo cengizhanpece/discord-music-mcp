@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/discord-music-mcp.git"
+    "url": "git+https://github.com/cengizhanpece/discord-music-mcp.git"
   },
   "scripts": {
     "start": "node src/index.js",

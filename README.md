@@ -4,7 +4,7 @@ An [MCP](https://modelcontextprotocol.io) server that lets Claude (or any MCP cl
 
 > "Play some lo-fi in the Lobby" → 🎶
 
-It talks to [**Discord YouTube DJ**](https://github.com/YOUR_GITHUB_USERNAME/discord-youtube-dj), a self-hosted bot that runs on your computer. Install and set that up first.
+It talks to [**Discord YouTube DJ**](https://github.com/cengizhanpece/discord-youtube-dj), a self-hosted bot that runs on your computer. Install and set that up first.
 
 📚 **Learning MCP?** This repo is also a commented, step-by-step tutorial (Turkish): [docs/TUTORIAL.tr.md](docs/TUTORIAL.tr.md).
 

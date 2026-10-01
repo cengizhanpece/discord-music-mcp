@@ -99,14 +99,14 @@ Parametreli hazır şablon. Claude Code'da `/mcp__discord-music__dj "sakin lo-fi
 
 ## 5. Bot tarafı
 
-MCP server, [Discord YouTube DJ](https://github.com/YOUR_GITHUB_USERNAME/discord-youtube-dj) botunun yerel API'sini kullanıyor. Botun API'si kasıtlı olarak sadece `127.0.0.1`'i dinliyor ve tarayıcıdan gelen yabancı origin'leri reddediyor. Node.js'in `fetch`'i `Origin` header'ı göndermediği için MCP server'ın istekleri kabul ediliyor. Yani **MCP server ile bot aynı bilgisayarda çalışmalı.**
+MCP server, [Discord YouTube DJ](https://github.com/cengizhanpece/discord-youtube-dj) botunun yerel API'sini kullanıyor. Botun API'si kasıtlı olarak sadece `127.0.0.1`'i dinliyor ve tarayıcıdan gelen yabancı origin'leri reddediyor. Node.js'in `fetch`'i `Origin` header'ı göndermediği için MCP server'ın istekleri kabul ediliyor. Yani **MCP server ile bot aynı bilgisayarda çalışmalı.**
 
 ## 6. Kurulum & çalıştırma
 
 Kullanıcı olarak hiçbir şey kurman gerekmiyor; `npx` paketi npm'den çekip çalıştırıyor. Geliştirme için:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/discord-music-mcp
+git clone https://github.com/cengizhanpece/discord-music-mcp
 cd discord-music-mcp
 npm install
 ```
